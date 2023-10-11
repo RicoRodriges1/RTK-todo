@@ -45,8 +45,9 @@ export function AddTodo() {
       <Dialog onClose={handleClose} open={open}>
         <Box sx={{ p: "30px", display: "flex", flexDirection: "column", alignItems: "center " }}>
           <TextField
+            required
             type="text"
-            label="label"
+            label="title"
             value={title}
             onChange={(event) => setTitle(event.target.value)}
             

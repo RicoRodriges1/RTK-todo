@@ -54,6 +54,7 @@ export function TodoItem({ id, title, body, status }) {
         <Box sx={{ p: "30px", display: "flex", flexDirection: "column", alignItems: "center "}}>
           <DialogTitle >Edit</DialogTitle>
           <TextField
+            required
             label="Title"
             value={title}
             onChange={(e) => {
